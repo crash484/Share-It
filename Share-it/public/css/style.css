@@ -1,0 +1,106 @@
+/* Fonts */
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("../fonts/Montserrat-Bold.ttf");
+    font-weight: bold;
+}
+
+/* Global Styles */
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #0f0095;
+    font-weight: bold;
+    text-transform: uppercase ;
+    
+    background-image: radial-gradient(circle, #d2c9c9, #b0a9a9, #908b8b, #716d6d, #535151);
+}
+
+#cta {
+    margin-top: 50px;
+    background-color: #2487ce;
+    padding-top: 1px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+#counterContainer .col-md-4 p,
+#counterContainer .col-md-4 h4 {
+    text-align: center;
+}
+#counterContainer .col-md-4 h4 {
+    color: black;
+    font-family: "Montserrat-Bold";
+    font-size: 50px;
+    
+}
+#counterContainer {
+    background-color: #ecf3fb;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    margin-top: 50px;
+}
+#homeApp #features .card-body {
+    height: 200px;
+    
+}
+#homeApp .card-header img {
+    width: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#homeApp .card-body h4 {
+    margin-bottom: 20px;
+    
+}
+#homeApp h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    font-family: "Montserrat"-Bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    transform: translateZ(0);
+}
+.home-lowertxt{
+    
+    font-weight: bold;
+    color: black;
+    font-family: "Montserrat"-Bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    transform: translateZ(0);
+}
+#homeApp .row {
+    margin-top: 50px;
+}
+
+.navbar{
+    background-image: linear-gradient(to bottom, #d9d9d9, #e0e0e0, #e7e7e7, #eeeeee, #f5f5f5, #f3f3f3, #f2f2f2, #f0f0f0, #e5e5e5, #dad9da, #d0cecf, #c6c3c3);
+}
+
+.col-md-4{
+    font-weight: bold;
+    color: black;
+    font-family: "Montserrat"-Bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    transform: translateZ(0);
+    
+}
+.col-md-12{
+    font-weight: bold;
+    color: black;
+    font-family: "Montserrat"-Bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    transform: translateZ(0);
+}
+
+.container .row .col-md-4 .card .card-footer .row .col-md-12 .h3 .a{
+    color: white;
+}
