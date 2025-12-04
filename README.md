@@ -118,8 +118,8 @@ Share-It is a file sharing platform that enables users to:
 ## Installation
 
 ### Prerequisites
-- Node.js (v12 or higher)
-- MongoDB (v3.6 or higher)
+- Node.js (v16 or higher - LTS recommended)
+- MongoDB (v4.0 or higher)
 - npm or yarn package manager
 
 ### Steps
@@ -161,7 +161,7 @@ The application uses the following configuration (can be set in a `.env` file):
 - **Port**: 3000 (default)
 - **MongoDB URL**: `mongodb://127.0.0.1:27017`
 - **Database Name**: `file_transfer`
-- **Session Secret**: `secret key` (should be changed in production)
+- **Session Secret**: `secret key` (**MUST be changed in production** - use a strong random string)
 
 ### File Storage
 - Uploaded files are stored in: `public/uploads/{user-email}/`
@@ -209,7 +209,7 @@ The application uses the following configuration (can be set in a `.env` file):
 ### 2. File Encryption
 ```javascript
 // Encryption Process
-1. Generate random encryption key (6-12 characters)
+1. Generate random encryption key (6-12 alphanumeric characters: A-Z, a-z, 0-9)
 2. Read file data into buffer
 3. Apply XOR operation with key
 4. Save encrypted data to disk
@@ -496,7 +496,7 @@ npm start
 ✅ User-specific encryption keys
 
 ### Production Recommendations
-⚠️ Change session secret to strong random value
+🔴 **CRITICAL**: Change session secret to strong random value (minimum 32 characters)
 ⚠️ Use environment variables for configuration
 ⚠️ Implement HTTPS/TLS
 ⚠️ Add rate limiting for API endpoints
@@ -506,6 +506,8 @@ npm start
 ⚠️ Add CSRF protection
 ⚠️ Implement user email verification
 ⚠️ Add password reset functionality
+⚠️ Use Node.js LTS versions (v16+)
+⚠️ Keep MongoDB updated (v4.0+)
 
 ## Contributing
 

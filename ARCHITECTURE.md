@@ -25,7 +25,7 @@ This document provides detailed architectural information about the Share-It fil
 ┌─────────────────────────────────────┐
 │         Database Layer              │
 ├─────────────────────────────────────┤
-│  • MongoDB 3.6+                     │
+│  • MongoDB 4.0+                     │
 │  • Collections:                     │
 │    - users                          │
 │    - public_links                   │
@@ -285,7 +285,7 @@ Process:
 ┌─────────────────────────────────────┐
 │ for i = 0 to file.length:           │
 │    encrypted[i] = original[i] XOR   │
-│                   key[i % key.len]  │
+│                   key[i % key.length]│
 └─────────────────────────────────────┘
 
 Output: Encrypted File (bytes)
@@ -300,7 +300,7 @@ Process:
 ┌─────────────────────────────────────┐
 │ for i = 0 to file.length:           │
 │    decrypted[i] = encrypted[i] XOR  │
-│                   key[i % key.len]  │
+│                   key[i % key.length]│
 └─────────────────────────────────────┘
 
 Output: Original File (bytes)
