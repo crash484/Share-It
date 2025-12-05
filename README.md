@@ -126,7 +126,7 @@ Share-It is a file sharing platform that enables users to:
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone <git@github.com:crash484/Share-It.git>
    cd Share-It
    ```
 
